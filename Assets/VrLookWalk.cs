@@ -5,6 +5,7 @@ using UnityEngine;
 public class VrLookWalk : MonoBehaviour {
 
 	public Transform vrCamera;
+
 	public float toggleAngle = 30f;
 	public float speed = 3.0f;
 	public bool moveFordward;
@@ -15,8 +16,6 @@ public class VrLookWalk : MonoBehaviour {
 	void Start () {
 
 		cc = GetComponent<CharacterController> ();
-
-
 	}
 	
 	// Update is called once per frame
@@ -25,8 +24,7 @@ public class VrLookWalk : MonoBehaviour {
 		if (vrCamera.eulerAngles.x >= toggleAngle && vrCamera.eulerAngles.x < 90.0f) {
 
 			moveFordward = true;
-
-
+	
 		} else {
 
 			moveFordward = false;
