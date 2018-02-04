@@ -1,8 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\VrLookWalk.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ScriptsJuego\Controlador-Personaje\VrLookWalk.cs">
     <Files>
-      <File FileName="Assets\VrLookWalk.cs" Line="38" Column="4" />
+      <File FileName="Assets\ScriptsJuego\Controlador-Personaje\VrLookWalk.cs" Line="22" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

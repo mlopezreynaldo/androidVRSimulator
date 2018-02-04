@@ -178,6 +178,7 @@ eca6588934e978a74735e6737af683a8 Assembly-CSharp.dll:.GvrReticlePointer
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:GoogleVR.VideoDemo.VideoControlsManager
 81dc5af3744a08050494c77f5012051e Assembly-CSharp.dll:.GvrPointerGraphicRaycaster
 6746ad828d32ad6e5c07a63950fd4be6 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Water.WaterTile
+881a399a1bd0f556b7f03dafa744d4e5 Assembly-CSharp.dll:.VrLookWalk
 5d708ead9a8a3f8af542fec349ed718c Assembly-CSharp.dll:Gvr.Internal.EmulatorConfig
 a8b185f93b85036e13e3f553c802615a Assembly-CSharp.dll:.GvrTooltip
 764d2ecb131d46720e1b8d63b8f7c2ba Assembly-CSharp.dll:GoogleVR.KeyboardDemo.KeyboardDelegateExample
@@ -190,4 +191,3 @@ a8b185f93b85036e13e3f553c802615a Assembly-CSharp.dll:.GvrTooltip
 e399fc54e753911801f12ac57c8fc414 Assembly-CSharp.dll:GoogleVR.GVRDemo.GVRDemoManager
 b2945430dfd6bbdb5d77043b47bf85e7 Assembly-CSharp.dll:.GvrControllerReticleVisual
 d885ad79a6ef5bfe2ce10637aac0b8a0 Assembly-CSharp.dll:GoogleVR.VideoDemo.AutoPlayVideo
-881a399a1bd0f556b7f03dafa744d4e5 Assembly-CSharp.dll:.VrLookWalk

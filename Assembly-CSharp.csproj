@@ -163,8 +163,7 @@
      <Compile Include="Assets\Scenes\Unity-WaterBuoyancy-master\Assets\Water Buoyancy\Scripts\WaterFX.cs" />
      <Compile Include="Assets\Scenes\Unity-WaterBuoyancy-master\Assets\Water Buoyancy\Scripts\WaterVolume.cs" />
      <Compile Include="Assets\Scenes\Unity-WaterBuoyancy-master\Assets\Water Buoyancy\Scripts\WaterWaves.cs" />
-     <Compile Include="Assets\scr.cs" />
-     <Compile Include="Assets\VrLookWalk.cs" />
+     <Compile Include="Assets\ScriptsJuego\Controlador-Personaje\VrLookWalk.cs" />
      <None Include="Assets\Scenes\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Scenes\GoogleVR\Shaders\GvrAdditiveOverlay.shader" />
