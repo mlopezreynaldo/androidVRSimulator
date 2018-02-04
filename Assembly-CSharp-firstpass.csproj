@@ -70,7 +70,6 @@
      <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
      <None Include="Assets\Scenes\GoogleVR\Plugins\Android\AndroidManifest-6DOF.xml" />
      <None Include="Assets\Scenes\GoogleVR\Demos\Shaders\GVRDemo\GVRDemoAmbientOcclusion.shader" />
-     <None Include="Assets\NaturalTilingTextures\External\ShaderForge_NTT_Triplanar.shader" />
      <None Include="Assets\Scenes\GoogleVR\Shaders\Video\VideoUnlitShader.shader" />
      <None Include="Assets\Scenes\GoogleVR\Shaders\GvrUnlitTextureOverlay.shader" />
      <None Include="Assets\Scenes\GoogleVR\Shaders\GvrControllerReticle.shader" />
