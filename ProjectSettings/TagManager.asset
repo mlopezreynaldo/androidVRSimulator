@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Water Volume
   - windArea
+  - Top
+  - Centre
+  - End
   layers:
   - Default
   - TransparentFX

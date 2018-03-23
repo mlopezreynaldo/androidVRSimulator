@@ -10,18 +10,42 @@ public class WindArea : MonoBehaviour {
 
     private void OnTriggerEnter(Collider col)
     {
+
+        Debug.Log("Entro en la zona de viento");
+
+        Transform[] allChildren = col.gameObject.GetComponentsInChildren<Transform>();
+        List<GameObject> childObjects = new List<GameObject>();
+        foreach (Transform child in allChildren)
+        { 
+            childObjects.Add(child.gameObject);
+            Debug.Log(child.gameObject.tag);
+        }
+
+
+        //if(col.gameObject.tag == ""){
+        
+          //  Debug.Log("Tag");
+        
+       // }
+        
+
         Rigidbody objectRigid = col.gameObject.GetComponent<Rigidbody>();
 
-        if (objectRigid != null)
+        if (objectRigid != null){
             rigidbodiesInWindzoneList.Add(objectRigid);
+        }
+
     }
 
     private void OnTriggerExit(Collider col)
     {
         Rigidbody objectRigid = col.gameObject.GetComponent<Rigidbody>();
 
-        if (objectRigid != null)
+        if (objectRigid != null){
+
             rigidbodiesInWindzoneList.Remove(objectRigid);
+
+        }
     }
 
     private void FixedUpdate()
