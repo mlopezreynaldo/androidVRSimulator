@@ -194,6 +194,9 @@
     <Reference Include="UnityEngine.WindModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
     </Reference>
+    <Reference Include="Facebook.Unity.Settings">
+      <HintPath>Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -301,6 +304,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BoatWindArea.cs" />
     <Compile Include="Assets\Scenes\GoogleVR\Legacy\Scripts\Audio\GvrAudio.cs" />
     <Compile Include="Assets\Scenes\GoogleVR\Legacy\Scripts\Audio\GvrAudioListener.cs" />
     <Compile Include="Assets\Scenes\GoogleVR\Legacy\Scripts\Audio\GvrAudioRoom.cs" />
@@ -400,6 +404,7 @@
     <Compile Include="Assets\Unity-WaterBuoyancy-master\Assets\Water Buoyancy\Scripts\WaterFX.cs" />
     <Compile Include="Assets\Unity-WaterBuoyancy-master\Assets\Water Buoyancy\Scripts\WaterVolume.cs" />
     <Compile Include="Assets\Unity-WaterBuoyancy-master\Assets\Water Buoyancy\Scripts\WaterWaves.cs" />
+    <Compile Include="Assets\windArea.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scenes\GoogleVR\Demos\Shaders\GVRDemo\GVRDemoAmbientOcclusion.shader" />
