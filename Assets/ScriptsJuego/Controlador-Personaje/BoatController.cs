@@ -8,13 +8,10 @@ public class BoatController : MonoBehaviour
 
   void Update()
   {
-
         if (forward)
         {
             ship.ThrottleUp();
         }
-
-
   }
 
 }

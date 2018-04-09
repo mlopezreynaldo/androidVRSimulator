@@ -5,7 +5,7 @@ using UnityEngine;
 public class WindArea : MonoBehaviour {
 
     List<Rigidbody> rigidbodiesInWindzoneList = new List<Rigidbody>();
-    Vector3 windDirection = new Vector3(20f,0f,0f);
+    public Vector3 windDirection;
     public float windStrength;
     float speed;
 

@@ -164,6 +164,9 @@
  <Reference Include="UnityEditor.Facebook.Extensions">
  <HintPath>/opt/Unity/Editor/Data/PlaybackEngines/Facebook/UnityEditor.Facebook.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="Google.ProtocolBuffers">
+ <HintPath>/home/23895346w/Baixades/scape-room/scape-room/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>/home/23895346w/.config/unity3d/cache/packages/packages.unity.com/com.unity.ads@1.0.7/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -178,9 +181,6 @@
  </Reference>
  <Reference Include="UnityEditor.Purchasing">
  <HintPath>/home/23895346w/.config/unity3d/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/Editor/UnityEditor.Purchasing.dll</HintPath>
- </Reference>
- <Reference Include="Google.ProtocolBuffers">
- <HintPath>/home/23895346w/Baixades/scape-room/scape-room/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
