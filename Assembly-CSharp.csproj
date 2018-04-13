@@ -160,6 +160,7 @@
      <Compile Include="Assets\ScriptsJuego\Controlador-Personaje\VrLookWalk.cs" />
      <Compile Include="Assets\ScriptsJuego\WindArea\BoatWindArea.cs" />
      <Compile Include="Assets\ScriptsJuego\WindArea\WindArea.cs" />
+     <Compile Include="Assets\ScriptsJuego\WindArea\WindZonesUtils\RandomWindZones.cs" />
      <Compile Include="Assets\Unity-WaterBuoyancy-master\Assets\Water Buoyancy\Scripts\Collections\MinHeap.cs" />
      <Compile Include="Assets\Unity-WaterBuoyancy-master\Assets\Water Buoyancy\Scripts\FloatingObject.cs" />
      <Compile Include="Assets\Unity-WaterBuoyancy-master\Assets\Water Buoyancy\Scripts\Utils\ColliderUtils.cs" />

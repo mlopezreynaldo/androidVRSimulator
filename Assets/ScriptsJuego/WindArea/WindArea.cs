@@ -9,6 +9,11 @@ public class WindArea : MonoBehaviour {
     public float windStrength;
     float speed;
 
+    WindArea(Vector3 windDirection, float windStrength){
+        this.windDirection = windDirection;
+        this.windStrength = windStrength;
+    }
+
     private void OnTriggerEnter(Collider col)
     {
         Rigidbody objectRigid = col.gameObject.GetComponent<Rigidbody>();
