@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class WindArea : MonoBehaviour {
 
-    List<Rigidbody> rigidbodiesInWindzoneList = new List<Rigidbody>();
+    private List<Rigidbody> rigidbodiesInWindzoneList = new List<Rigidbody>();
     public Vector3 windDirection;
-    public float windStrength;
-    float speed;
+    public float windStrength = 0f;
 
-    WindArea(Vector3 windDirection, float windStrength){
+
+    public float WindStrength { get; set; }
+    public Vector3 WindDirection { get; set; }
+
+    public void WindSet(Vector3 windDirection, float windStrength){
         this.windDirection = windDirection;
         this.windStrength = windStrength;
     }
+
 
     private void OnTriggerEnter(Collider col)
     {
@@ -25,10 +29,9 @@ public class WindArea : MonoBehaviour {
     private void OnTriggerExit(Collider col)
     {
         Rigidbody objectRigid = col.gameObject.GetComponent<Rigidbody>();
+
         if (objectRigid != null){
-
             rigidbodiesInWindzoneList.Remove(objectRigid);
-
         }
     }
 

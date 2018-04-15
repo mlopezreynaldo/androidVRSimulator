@@ -8,38 +8,63 @@ public class RandomWindZones : MonoBehaviour {
 
 	public Vector3 center;
 	public Vector3 size;
+    public GameObject boatPosition;
 	private int count = 0;
+    public int numberWindZones = 150;
+    public GameObject arrow; 
 
 	void Start () {
 
-		SpawnWindZones();
-
-	}
+        SpawnWindZones(false);
+    }
 	
 	void Update () {
 
-		if(count == 150){
+		if(count == numberWindZones){
 
 		} else {
-			SpawnWindZones();
+			SpawnWindZones(true);
 			count++;
 			//Debug.Log("Este es el numero " + count);
 		}
 	}
 
-	public void SpawnWindZones(){
+	public void SpawnWindZones(bool random){
 
-		Vector3 pos = center + new Vector3(Random.Range(-size.x / 2 , size.x / 2),0,Random.Range(-size.x / 2 , size.x / 2));
-		//Instantiate(WindZone, pos, Quaternion.identity);
-		Instantiate(WindZone as GameObject);
-		WindZone.GetComponent<WindArea>(pos,50f);
-		
+        if (random)
+        {
+            Vector3 pos = center + new Vector3(Random.Range(-size.x / 2, size.x / 2), 0, Random.Range(-size.x / 2, size.x / 2));
+            Vector3 windDirectionRandom = new Vector3(Random.Range(-20, 20), 0, Random.Range(-20 , 20));
+
+            WindZone.GetComponent<WindArea>().WindSet(windDirectionRandom, Random.Range(20, 80));
+
+            Instantiate(WindZone as GameObject, pos, Quaternion.identity);
+
+            arrow.GetComponent<Transform>().LookAt(pos);
+            Instantiate(arrow as GameObject, pos, Quaternion.identity);
+ 
+        }
+        else
+        {
+
+            Vector3 windDirectionNear = new Vector3(Random.Range(-20, 20), 0, Random.Range(-20, 20));
+            Vector3 nearWindZone = new Vector3(boatPosition.transform.position.x, 0 , boatPosition.transform.position.z + 270);
+            float force = Random.Range(20 , 80);
+           
+            WindZone.GetComponent<WindArea>().WindSet(windDirectionNear, force);
+            Instantiate(WindZone as GameObject, nearWindZone, Quaternion.identity);
+
+            Vector3 arrowPosition = new Vector3(windDirectionNear.x, 15,windDirectionNear.z); 
+            arrow.GetComponent<Transform>().LookAt(arrowPosition);
+            Instantiate(arrow as GameObject, nearWindZone, Quaternion.identity); 
+          
+            Debug.Log("Near created " + windDirectionNear.ToString());
+            Debug.Log("Force Using " + force);
+        }
 	}
 
-	private void OnDrawGizmosSelected() {
-		
+	private void OnDrawGizmosSelected() {		
 		Gizmos.color = new Color(1,0,0,0.5f);
 		Gizmos.DrawCube(center, size);
-
 	}
 }
