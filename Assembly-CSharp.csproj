@@ -154,6 +154,9 @@
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrUIHelpers.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrVRHelpers.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
+     <Compile Include="Assets\Menu\Exit.cs" />
+     <Compile Include="Assets\Menu\LvlMgr.cs" />
+     <Compile Include="Assets\Menu\Rotate.cs" />
      <Compile Include="Assets\ScriptsJuego\BoatMovement\Orbital.cs" />
      <Compile Include="Assets\ScriptsJuego\BoatMovement\PropellerBoats.cs" />
      <Compile Include="Assets\ScriptsJuego\Controlador-Personaje\BoatController.cs" />

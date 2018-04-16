@@ -54,8 +54,14 @@ public class RandomWindZones : MonoBehaviour {
             WindZone.GetComponent<WindArea>().WindSet(windDirectionNear, force);
             Instantiate(WindZone as GameObject, nearWindZone, Quaternion.identity);
 
-            Vector3 arrowPosition = new Vector3(windDirectionNear.x, 15,windDirectionNear.z); 
+            Vector3 arrowPosition = new Vector3(windDirectionNear.x, 15 ,windDirectionNear.z); 
             arrow.GetComponent<Transform>().LookAt(arrowPosition);
+            
+            //Transform directionArrow = new Vector3(windDirectionNear.x, 0 , windDirectionNear.z);
+            //Vector3 posDesired = directionArrow - arrow.GetComponent<Transform>().position;
+
+
+
             Instantiate(arrow as GameObject, nearWindZone, Quaternion.identity); 
           
             Debug.Log("Near created " + windDirectionNear.ToString());
