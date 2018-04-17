@@ -14,7 +14,7 @@ public class RandomWindZones : MonoBehaviour {
     public GameObject arrow; 
 
 	void Start () {
-
+		UnityEngine.XR.XRSettings.enabled = true;
         SpawnWindZones(false);
     }
 	
